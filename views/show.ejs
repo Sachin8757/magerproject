@@ -85,11 +85,12 @@
                                 </p>
 
                             </div>
-                            
+                            <% if(currUser && currUser._id.equals(lis.owner._id) ){ %>
                             <form action="/listing/<%=lis._id %>/review/<%=rev._id %>?_method=DELETE" method="post"
                                 class="mb-3">
                                 <button class="btn btn-sm btn-dark">Delete</button>
                             </form>
+                            <%}%>
                         </div>
                         <% } %>
                 </div>
