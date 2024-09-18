@@ -84,6 +84,6 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).render("error.ejs",{err})
 })
 
-app.listen(3000,()=>{
-    console.log("app runing...")
-})
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
