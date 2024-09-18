@@ -27,7 +27,7 @@ module.exports.createform=(req,res)=>{
     newlisting.image={url,filename};
     newlisting.save();
     req.flash("success","listing created!");
-    res.redirect("/listing")
+    res.redirect("/")
 }
 
 //show route in deatils
