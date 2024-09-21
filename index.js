@@ -1,7 +1,10 @@
-require('dotenv').config()
+// if(){
+//     require('dotenv').config()
+// }
+
 const express=require('express')
 const app=express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 const mongoose=require("./model/connection.js")
 const path=require('path')
 var methodoverride=require('method-override');
