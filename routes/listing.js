@@ -16,7 +16,7 @@ route.get("/",wrapAsynce(listingController.index))
 //new route
 route.get("/new",isLoggedIn,wrapAsynce(listingController.renderform))
 
-route.post("/new",isLoggedIn,upload.single('listing[image]'),wrapAsynce(listingController.createform))
+route.post("/new",isLoggedIn,upload.single('listing[image]')(listingController.createform))
 
 //show route
 route.get("/:id",wrapAsynce(listingController.listindeatils))
